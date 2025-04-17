@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+</head>
+<body>
+    <form action="./form.php" method="post">
+        <input type="text" name="name" placeholder="Enter user name">
+        <br/>
+        <br/>
+        <input type="text" name="email" placeholder="Enter user email">
+        <br/>
+        <br/>
+        <input type="password" name="password" placeholder="enter user password">
+        <br/>
+        <br/>
+        <input type="checkbox" name="skills[]" value="php"><spam>PHP</spam>
+        <br/>
+        <br/>
+        <input type="checkbox" name="skills[]" value="c++"><spam>C++</spam>
+        <br/>
+        <br/>
+        <input type="checkbox" name="skills[]" value="html"><spam>HTML</spam>
+        <br/>
+        <br/>
+        <input type="checkbox" name="skills[]" value="python"><spam>PYTHON</spam>
+        <br/>
+        <br/>
+        <input type="radio" name="gender" value="male"><spam>MALE</spam>
+        <br/>
+        <input type="radio" name="gender" value="female"><spam>FEMALE</spam>
+        <br/>
+        <br/>
+        <select name="city">
+            <option >Select youe city</option>
+            <option value="NOIDA">NOIDA</option>
+            <option value="DELHI">DELHI</option>
+            <option value="GURUGRAM">GURUGRAM</option>
+            <option value="CHENNIE">CHENNIE</option>
+        </select>
+        <br/>
+        <br/>
+        <textarea name="bio"></textarea>
+        <br/>
+        <br/>
+        <button>Sign Up</button>
+    </form>
+</body>
+</html>
