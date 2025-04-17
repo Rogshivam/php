@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <title>Document</title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
     <form action="./register.php" method="get">
-        <input type="text" name="user_name" placeholder="enter name" />
-        <br />
-        <br />
-        <input type="password" name="user_password" placeholder="enter Password" />
-        <br />
-        <br />
-        <input type="text" name="user_email" placeholder="enter emaail" />
-        <br />
-        <br />
-        <input type="text" name="user_address" placeholder="enter Address" />
-        <br />
-        <br />
-        <button>Register</button>
+        <input type="text" name="user_name" placeholder="Enter name" />
+        <input type="password" name="user_password" placeholder="Enter Password" />
+        <input type="text" name="user_email" placeholder="Enter email" />
+        <input type="text" name="user_address" placeholder="Enter Address" />
+        <button type="submit">Register</button>
     </form>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+        }
+    </script>
 </body>
 </html>
