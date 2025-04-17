@@ -15,5 +15,5 @@ if(isset($_COOKIE['color'])){
     echo "no color set";
 }
 echo "<br/>";
-print_r($_COOKIE);
+print_r($_COOKIE);   
 ?>
