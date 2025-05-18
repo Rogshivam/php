@@ -32,7 +32,7 @@ To run these PHP files locally:
    ```bash
    git clone https://github.com/Rogshivam/php.git
    cd php
-````
+  ```
 
 2. **Start a local PHP server**
 
